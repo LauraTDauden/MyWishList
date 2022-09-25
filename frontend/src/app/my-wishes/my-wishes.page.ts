@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { WishService } from '../services/wish.service';
 
 @Component({
@@ -10,9 +11,13 @@ export class MyWishesPage implements OnInit {
 
   wishes: any = []
 
-  constructor(private wishService: WishService) { }
+  constructor(private wishService: WishService, private router: Router) { }
 
   ngOnInit() {
+    this.getAllWishes();
+  }
+
+  ionViewWillEnter() {
     this.getAllWishes();
   }
 
@@ -20,6 +25,17 @@ export class MyWishesPage implements OnInit {
     this.wishService.getWishes().subscribe(response => {
       this.wishes = response;
     })
+  }
+
+  deleteWish(id){
+    this.wishService.deleteWish(id).subscribe(response => {
+      console.log(response);     
+      this.getAllWishes();
+    })
+  }
+
+  gotoNewWish(){
+    this.router.navigateByUrl("/new-wish");
   }
 
 }

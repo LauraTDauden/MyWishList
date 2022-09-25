@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'my-wishes',
     loadChildren: () => import('./my-wishes/my-wishes.module').then( m => m.MyWishesPageModule)
   },
+  {
+    path: 'new-wish',
+    loadChildren: () => import('./new-wish/new-wish.module').then( m => m.NewWishPageModule)
+  }
 ];
 
 @NgModule({

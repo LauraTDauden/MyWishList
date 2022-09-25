@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>my-wishes</ion-title>
+    <ion-title>My Wishes</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -11,7 +11,13 @@
         <h1>{{w.item}}</h1>
         <p>{{w.description}}</p>
       </ion-label>
+      <ion-button
+      >Edit</ion-button>
+        <ion-button
+        (click)="deleteWish(w.id)">Delete</ion-button>
     </ion-item>
   </ion-list>
-
+  <ion-button
+  (click)="gotoNewWish()"
+  >New wish!</ion-button>
 </ion-content>
