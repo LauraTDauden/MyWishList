@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'new-wish',
     loadChildren: () => import('./new-wish/new-wish.module').then( m => m.NewWishPageModule)
+  },
+  {
+    path: 'new-wish/:id',
+    loadChildren: () => import('./new-wish/new-wish.module').then( m => m.NewWishPageModule)
   }
 ];
 

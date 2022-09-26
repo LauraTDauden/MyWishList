@@ -37,5 +37,11 @@ export class MyWishesPage implements OnInit {
   gotoNewWish(){
     this.router.navigateByUrl("/new-wish");
   }
+  gotoUpdateWish(id){
+    this.router.navigateByUrl("/new-wish/"+id);
+  }
+  gotoHome(){
+    this.router.navigateByUrl("/");
+  }
 
 }

@@ -12,12 +12,19 @@
         <p>{{w.description}}</p>
       </ion-label>
       <ion-button
+      (click) = "gotoUpdateWish(w.id)"
       >Edit</ion-button>
         <ion-button
         (click)="deleteWish(w.id)">Delete</ion-button>
     </ion-item>
   </ion-list>
   <ion-button
+  shape = "round"
   (click)="gotoNewWish()"
-  >New wish!</ion-button>
+  >Make a wish!</ion-button>
+  <ion-button class = "home"
+  fill="outline"
+  shape = "round"
+  (click)="gotoHome()"
+  >Home</ion-button>
 </ion-content>

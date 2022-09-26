@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>New wish</ion-title>
+    <ion-title>{{title}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -9,7 +9,7 @@
   <form [formGroup]="formData" (ngSubmit)="onSubmit()">
     <ion-list>
       <ion-item>
-        <ion-label>Wish: </ion-label>
+        <ion-label >Wish: </ion-label>
         <ion-input formControlName="item"></ion-input>
       </ion-item>
       <ion-item>
@@ -17,9 +17,10 @@
         <ion-input formControlName="description"></ion-input>
       </ion-item>
     </ion-list>
-    <ion-button type="submit" expand="block"> Add wish</ion-button>
+    <ion-button type="submit" expand="block"> {{title}}</ion-button>
   </form>
   <ion-button
+  fill = "outline"
   (click) = "gotoMyWishes()">Return</ion-button>
 
 </ion-content>
