@@ -6,25 +6,26 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let w of wishes">
-      <ion-label>
+    <ion-item *ngFor="let w of wishes" >
+      <ion-label text-wrap class="texts">
         <h1>{{w.item}}</h1>
-        <p>{{w.description}}</p>
+        <p class = "desc">{{w.description}}</p>
       </ion-label>
-      <ion-button
-      (click) = "gotoUpdateWish(w.id)"
-      >Edit</ion-button>
+
         <ion-button
-        (click)="deleteWish(w.id)">Delete</ion-button>
+        class = "editbtn"
+         (click)="gotoUpdateWish(w.id)">
+          Edit
+        </ion-button>
+        <ion-button
+        class="deletebtn" color="danger" (click)="deleteWish(w.id)">
+          <ion-icon name="trash"></ion-icon>
+        </ion-button>
+
     </ion-item>
   </ion-list>
-  <ion-button
-  shape = "round"
-  (click)="gotoNewWish()"
-  >Make a wish!</ion-button>
-  <ion-button class = "home"
-  fill="outline"
-  shape = "round"
-  (click)="gotoHome()"
-  >Home</ion-button>
+  <ion-footer-bar align-title="left">
+  <ion-button class="makebtn" shape="round" (click)="gotoNewWish()">Make a wish! </ion-button>
+  <ion-button class="home" fill="outline" shape="round" (click)="gotoHome()"> <ion-icon  name="home"></ion-icon></ion-button>
+  </ion-footer-bar>
 </ion-content>

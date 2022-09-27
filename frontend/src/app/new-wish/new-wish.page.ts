@@ -69,6 +69,7 @@ export class NewWishPage implements OnInit {
   }
 
   gotoMyWishes() {
+    this.formData.reset();
     this.router.navigateByUrl("/my-wishes");
   }
 }

@@ -9,18 +9,18 @@
   <form [formGroup]="formData" (ngSubmit)="onSubmit()">
     <ion-list>
       <ion-item>
-        <ion-label >Wish: </ion-label>
-        <ion-input formControlName="item"></ion-input>
+        <ion-label color="dark" >Wish: </ion-label>
+        <ion-input color="medium" formControlName="item"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label>Description: </ion-label>
-        <ion-input formControlName="description"></ion-input>
+        <ion-label color="dark">Description: </ion-label>
+        <ion-input color="medium" formControlName="description" ></ion-input>
       </ion-item>
     </ion-list>
     <ion-button type="submit" expand="block"> {{title}}</ion-button>
   </form>
   <ion-button
   fill = "outline"
-  (click) = "gotoMyWishes()">Return</ion-button>
+  (click) = "gotoMyWishes()"><ion-icon name="arrow-back"></ion-icon> Return</ion-button>
 
 </ion-content>

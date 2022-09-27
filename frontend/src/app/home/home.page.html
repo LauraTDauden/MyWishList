@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      M Y _ W I S H L I S T !
+      M Y <ion-icon name="star-half"></ion-icon> W I S H L I S T 
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,12 +13,14 @@
     </ion-toolbar>
   </ion-header>
 
-    <h1> Welcome to My Wishlist!</h1>
+    <h1> Welcome to My Wishlist! </h1>
   <ion-button expand="block"
   shape = round
   class = "button"
   (click)="gotoMyWishes()">
-  My wishes
+  
+  My wishes...
+  <ion-icon name="star-half"></ion-icon>
   </ion-button>
 
 </ion-content>
