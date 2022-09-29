@@ -1,9 +1,9 @@
-# MyWishList
+# MyWishList ✨
 
-Simple full stack app with Ionic + Angular + Express + Sequelize + MySQL
+This is a simple full stack app developed using Ionic + Angular + Express + Sequelize + MySQL to manage a small Wishlist. It consists of a simple CRUD that allows as to manage the items in our wishlist.
+The back-end is developed with Node.js and Express, using MySQL for the database, while the front-end is developed with Ionic and Angular.
+Hope you like it!! 💖
 
-Initially appeared on
-[gist](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2). But the page cannot open anymore so that is why I have moved it here.
 
 ## Getting Started
 
@@ -13,9 +13,9 @@ for notes on deploying the project on a live system.
 
 ### Prerequisites
 
-Requirements for the software and other tools to build, test and push 
-- [Example 1](https://www.example.com)
-- [Example 2](https://www.example.com)
+In order for the app to work we need to install Node and MySQL.
+- [Node.js](https://nodejs.org/es/download/)
+- [MySQL](https://www.mysql.com/downloads/)
 
 ### Installing
 
