@@ -23,64 +23,20 @@ In order for the app to work we need to install Node and MySQL.
 2) Install the dependencies in both backend and frontend folders with the command
 
     npm install
+    
+ 3) Create the database with the name **db_wishlist**
+ 
+ 4) Change the database configuration in the db.config.js file (inside the config package in the backend project), changing the username and password.
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Sample Tests
-
-Explain what these tests test and why
-
-    Give an example
-
-### Style test
-
-Checks if the best practices and the right coding style has been used.
-
-    Give an example
+## Postman and tests
+You may test the server with the following endpoints in postman: https://documenter.getpostman.com/view/23626796/2s83mjDfg4
 
 ## Deployment
 
-Add additional notes to deploy this on a live system
+* For the frontend, deploy the project using the script command **ionic serve**
+* For the backend, deploy the project using the script command **npm start**
 
-## Built With
-
-  - [Contributor Covenant](https://www.contributor-covenant.org/) - Used
-    for the Code of Conduct
-  - [Creative Commons](https://creativecommons.org/) - Used to choose
-    the license
-    
-    POSTMAN LINK: https://documenter.getpostman.com/view/23626796/2s83mjDfg4
-
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code
-of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [Semantic Versioning](http://semver.org/) for versioning. For the versions
-available, see the [tags on this
-repository](https://github.com/PurpleBooth/a-good-readme-template/tags).
 
 ## Authors
 
-  - **Billie Thompson** - *Provided README Template* -
-    [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of
-[contributors](https://github.com/PurpleBooth/a-good-readme-template/contributors)
-who participated in this project.
-
-## License
-
-This project is licensed under the [CC0 1.0 Universal](LICENSE.md)
-Creative Commons License - see the [LICENSE.md](LICENSE.md) file for
-details
-
-## Acknowledgments
-
-  - Hat tip to anyone whose code is used
-  - Inspiration
-  - etc
+  - **Laura Torres Daudén**
