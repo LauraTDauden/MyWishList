@@ -36,6 +36,8 @@ You may test the server with the following endpoints in postman: https://documen
 * For the frontend, deploy the project using the script command **ionic serve**
 * For the backend, deploy the project using the script command **npm start**
 
+Enjoy!! 💟
+
 
 ## Authors
 
