@@ -34,7 +34,7 @@ You may test the server with the following endpoints in postman: https://documen
 ## Deployment
 
 * For the frontend, deploy the project using the script command **ionic serve**
-* For the backend, deploy the project using the script command **npm start**
+* For the backend, deploy the project using the command **node index.js**
 
 Enjoy!! 💟
 
