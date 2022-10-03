@@ -18,9 +18,9 @@ In order for the app to work we need to install Node and MySQL.
 
 ### Installing
 
-1) First of all, clone the repository
+ 1) First of all, clone the repository
 
-2) Install the dependencies in both backend and frontend folders with the command
+ 2) Install the dependencies in both backend and frontend folders with the command
 
     npm install
     
@@ -36,7 +36,23 @@ You may test the server with the following endpoints in postman: https://documen
 * For the frontend, deploy the project using the script command **ionic serve**
 * For the backend, deploy the project using the command **node index.js**
 
-Enjoy!! 💟
+## User guide
+* In the landing page, press "My wishes..." to access the WishList management screen!
+![imagen](https://user-images.githubusercontent.com/84546617/193632493-7d75681b-adbd-44b5-b761-52e1090b2adf.png)
+
+* In the My Wishes screen, you can see a list of all your wishes, as well as a button to create a new wish and one to return to the homepage. In each row, there's also a button to edit and to delete each wish.
+![imagen](https://user-images.githubusercontent.com/84546617/193634057-6afaa18b-3c03-4e8f-8427-365b60bd465d.png)
+
+* If you press on the **Make a wish** button, you access the screen to create a new wish!
+
+![imagen](https://user-images.githubusercontent.com/84546617/193634272-31ab5d0b-2de4-4b81-8965-c31fb1b04036.png)
+
+* If you press the edit button on the My Wishes screen, a similar screen opens with the data of the selected wish. There you may update the information.
+* 
+* If you press the rubbish can icon, you may delete a wish from the list.
+
+
+Enjoy the app!! 💟
 
 
 ## Authors
