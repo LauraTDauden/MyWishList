@@ -38,9 +38,11 @@ You may test the server with the following endpoints in postman: https://documen
 
 ## User guide
 * In the landing page, press "My wishes..." to access the WishList management screen!
+
 ![imagen](https://user-images.githubusercontent.com/84546617/193632493-7d75681b-adbd-44b5-b761-52e1090b2adf.png)
 
 * In the My Wishes screen, you can see a list of all your wishes, as well as a button to create a new wish and one to return to the homepage. In each row, there's also a button to edit and to delete each wish.
+
 ![imagen](https://user-images.githubusercontent.com/84546617/193634057-6afaa18b-3c03-4e8f-8427-365b60bd465d.png)
 
 * If you press on the **Make a wish** button, you access the screen to create a new wish!
