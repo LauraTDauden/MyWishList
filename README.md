@@ -39,18 +39,22 @@ You may test the server with the following endpoints in postman: https://documen
 ## User guide
 * In the landing page, press "My wishes..." to access the WishList management screen!
 
-![imagen](https://user-images.githubusercontent.com/84546617/193632493-7d75681b-adbd-44b5-b761-52e1090b2adf.png)
+![imagen](https://user-images.githubusercontent.com/84546617/193635163-fed63891-ac3a-4426-aad0-1c33793fc84f.png)
+
 
 * In the My Wishes screen, you can see a list of all your wishes, as well as a button to create a new wish and one to return to the homepage. In each row, there's also a button to edit and to delete each wish.
 
-![imagen](https://user-images.githubusercontent.com/84546617/193634057-6afaa18b-3c03-4e8f-8427-365b60bd465d.png)
+![imagen](https://user-images.githubusercontent.com/84546617/193635236-a3f53682-39f2-4b1d-89a1-256bc926c8bf.png)
 
 * If you press on the **Make a wish** button, you access the screen to create a new wish!
 
-![imagen](https://user-images.githubusercontent.com/84546617/193634272-31ab5d0b-2de4-4b81-8965-c31fb1b04036.png)
+![imagen](https://user-images.githubusercontent.com/84546617/193635301-bb086deb-3290-4855-b3eb-e811a17cc6a7.png)
 
 * If you press the edit button on the My Wishes screen, a similar screen opens with the data of the selected wish. There you may update the information.
-* 
+
+![imagen](https://user-images.githubusercontent.com/84546617/193635356-af01b8f7-0330-4dc6-ac42-d2f3390ce00e.png)
+
+
 * If you press the rubbish can icon, you may delete a wish from the list.
 
 
