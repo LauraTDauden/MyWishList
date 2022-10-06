@@ -15,6 +15,7 @@ for notes on deploying the project on a live system.
 In order for the app to work we need to install Node and MySQL.
 - [Node.js](https://nodejs.org/es/download/)
 - [MySQL](https://www.mysql.com/downloads/)
+- [Git](https://git-scm.com/downloads)
 
 ### Installing
 
