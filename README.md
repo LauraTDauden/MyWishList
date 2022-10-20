@@ -1,11 +1,10 @@
-# MyWishList
+# MyWishList ✨
 
-Simple full stack app with Ionic + Angular + Express + Sequelize + MySQL
+This is a simple full stack app developed using Ionic + Angular + Express + Sequelize + MySQL to manage a small Wishlist. It consists of a simple CRUD that allows us to manage the items in our wishlist.
+The backend is developed with Node.js and Express, using MySQL for the database, while the frontend is developed with Ionic and Angular.
 
-Initially appeared on
-[gist](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2). But the page cannot open anymore so that is why I have moved it here.
 
-## Getting Started
+## Getting Started 🚀
 
 These instructions will give you a copy of the project up and running on
 your local machine for development and testing purposes. See deployment
@@ -13,81 +12,56 @@ for notes on deploying the project on a live system.
 
 ### Prerequisites
 
-Requirements for the software and other tools to build, test and push 
-- [Example 1](https://www.example.com)
-- [Example 2](https://www.example.com)
+In order for the app to work we need to install Node and MySQL.
+- [Node.js](https://nodejs.org/es/download/)
+- [MySQL](https://www.mysql.com/downloads/)
+- [Git](https://git-scm.com/downloads)
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development
-environment running
+ 1) First of all, clone the repository
 
-Say what the step will be
+ 2) Install the dependencies in both backend and frontend folders with the command
 
-    Give the example
+    npm install
+    
+ 3) Create the database with the name **db_wishlist**
+ 
+ 4) Change the database configuration in the db.config.js file (inside the config package in the backend project), changing the username and password.
 
-And repeat
-
-    until finished
-
-End with an example of getting some data out of the system or using it
-for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Sample Tests
-
-Explain what these tests test and why
-
-    Give an example
-
-### Style test
-
-Checks if the best practices and the right coding style has been used.
-
-    Give an example
+## Postman and tests
+You may test the server with the following endpoints in postman: https://documenter.getpostman.com/view/23626796/2s83mjDfg4
 
 ## Deployment
 
-Add additional notes to deploy this on a live system
+* For the frontend, deploy the project using the script command **ionic serve**
+* For the backend, deploy the project using the command **node index.js**
 
-## Built With
+## User guide
+* In the landing page, press "My wishes..." to access the WishList management screen!
 
-  - [Contributor Covenant](https://www.contributor-covenant.org/) - Used
-    for the Code of Conduct
-  - [Creative Commons](https://creativecommons.org/) - Used to choose
-    the license
+![imagen](https://user-images.githubusercontent.com/84546617/193635163-fed63891-ac3a-4426-aad0-1c33793fc84f.png)
 
-## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code
-of conduct, and the process for submitting pull requests to us.
+* In the My Wishes screen, you can see a list of all your wishes, as well as a button to create a new wish and one to return to the homepage. In each row, there's also a button to edit and to delete each wish.
 
-## Versioning
+![imagen](https://user-images.githubusercontent.com/84546617/193635236-a3f53682-39f2-4b1d-89a1-256bc926c8bf.png)
 
-We use [Semantic Versioning](http://semver.org/) for versioning. For the versions
-available, see the [tags on this
-repository](https://github.com/PurpleBooth/a-good-readme-template/tags).
+* If you press on the **Make a wish** button, you access the screen to create a new wish!
+
+![imagen](https://user-images.githubusercontent.com/84546617/193635301-bb086deb-3290-4855-b3eb-e811a17cc6a7.png)
+
+* If you press the edit button on the My Wishes screen, a similar screen opens with the data of the selected wish. There you may update the information.
+
+![imagen](https://user-images.githubusercontent.com/84546617/193635356-af01b8f7-0330-4dc6-ac42-d2f3390ce00e.png)
+
+
+* If you press the rubbish can icon, you may delete a wish from the list.
+
+
+Enjoy the app!! 💟
+
 
 ## Authors
 
-  - **Billie Thompson** - *Provided README Template* -
-    [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of
-[contributors](https://github.com/PurpleBooth/a-good-readme-template/contributors)
-who participated in this project.
-
-## License
-
-This project is licensed under the [CC0 1.0 Universal](LICENSE.md)
-Creative Commons License - see the [LICENSE.md](LICENSE.md) file for
-details
-
-## Acknowledgments
-
-  - Hat tip to anyone whose code is used
-  - Inspiration
-  - etc
+  - **Laura Torres Daudén**
