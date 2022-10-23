@@ -3,13 +3,15 @@ module.exports = app => {
 
     var router = require("express").Router();
 
-    router.post("/", wishes.create);
+    var upload = require('../multer/upload');
+
+    router.post("/", upload.single('filename'), wishes.create);
 
     router.get("/", wishes.findAll);
 
     router.get("/:id", wishes.findOne);
 
-    router.put("/:id", wishes.update);
+    router.put("/:id", upload.single('filename'), wishes.update);
 
     router.delete("/:id", wishes.delete);
 

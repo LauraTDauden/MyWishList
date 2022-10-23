@@ -1,62 +1,54 @@
 const db = require("../model");
-const Wish = db.wishes;
+const Photo = db.photos;
 const Op = db.Sequelize.Op;
 
 exports.create = (req, res) => {
-    if (!req.body.item) {
-        res.status(400).send({
-            message: "Content cannot be empty!"
-        });
-        return;
-    };
-
-    const wish = {
-        item: req.body.item,
+    const photo = {
         description: req.body.description,
         filename: req.file ? req.file.filename : ""
     };
 
-    Wish.create(wish)
+    Photo.create(photo)
         .then(data => {
             res.send(data);
         })
         .catch(err => {
             res.status(500).send({
                 message:
-                    err.message || "Some error occurred while creating the wish."
+                    err.message || "Some error occurred while creating the photo."
             });
         });
 };
 
 exports.findAll = (req, res) => {
-    Wish.findAll()
+    Photo.findAll()
         .then(data => {
             res.send(data);
         })
         .catch(err => {
             res.status(500).send({
                 message:
-                    err.message || "Some error occurred while retrieving wishes."
+                    err.message || "Some error occurred while retrieving photos."
             });
         });
 };
 
 exports.findOne = (req, res) => {
     const id = req.params.id;
-    Wish.findByPk(id)
+    Photo.findByPk(id)
         .then(data => {
             if (data) {
                 res.send(data);
             } else {
                 res.status(404).send({
-                    message: `Cannot find Wish with id ${id}`
+                    message: `Cannot find Photo with id ${id}`
                 })
             }
         })
         .catch(err => {
             res.status(500).send({
                 message:
-                    err.message || "Some error occurred while retrieving the wish."
+                    err.message || "Some error occurred while retrieving the photo."
             });
         });
 };
@@ -64,23 +56,23 @@ exports.findOne = (req, res) => {
 exports.update = (req, res) => {
     const id = req.params.id;
 
-    Wish.update(req.body, {
+    Photo.update(req.body, {
         where: {id: id}
     })
     .then(updated => {
        if (updated == 1){
             res.send({
-                message: "Wish was updated successfully!"
+                message: "Photo was updated successfully!"
             });
        } else {
         res.send({
-            message: `Wish couldn't be updated.`
+            message: `Photo couldn't be updated.`
         });
        }
     })
     .catch(err => {
         res.status(500).send({
-            message: "Error updating Wish with id " + id
+            message: "Error updating Photo with id " + id
         });
     });
 };
@@ -88,23 +80,23 @@ exports.update = (req, res) => {
 exports.delete = (req, res) => {
     const id = req.params.id;
 
-    Wish.destroy({
+    Photo.destroy({
         where: {id: id}
     })
     .then(deleted => {
        if (deleted == 1){
             res.send({
-                message: "Wish was deleted successfully!"
+                message: "Photo was deleted successfully!"
             });
        } else {
         res.send({
-            message: `Wish with id ${id} could not be deleted.`
+            message: `Photo with id ${id} could not be deleted.`
         });
        }
     })
     .catch(err => {
         res.status(500).send({
-            message: "Could not delete Wish with id " + id
+            message: "Could not delete Photo with id " + id
         });
     });
 };

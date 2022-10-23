@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { MyWishesPageRoutingModule } from './my-wishes-routing.module';
 
 import { MyWishesPage } from './my-wishes.page';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MyWishesPageRoutingModule
+    MyWishesPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [MyWishesPage]
 })

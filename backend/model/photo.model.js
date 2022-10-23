@@ -1,10 +1,7 @@
 
 
 module.exports = (sequelize, Sequelize) => {
-    const Wish = sequelize.define ("wish", {
-        item: {
-            type: Sequelize.STRING
-        },
+    const Photo = sequelize.define ("photo", {
         description: {
             type: Sequelize.STRING
         },
@@ -13,5 +10,5 @@ module.exports = (sequelize, Sequelize) => {
         }
     });
 
-    return Wish;
+    return Photo;
 };

@@ -1,0 +1,27 @@
+[
+    {
+        "icon": "home-outline",
+        "name": "Home",
+        "redirectTo": "/home"
+    },
+    {
+        "icon": "person-circle-outline",
+        "name": "Profile",
+        "redirectTo": "/profile"
+    },
+    {
+        "icon": "color-wand-outline",
+        "name": "Make a wish",
+        "redirectTo": "/new-wish"
+    },
+    {
+        "icon": "sparkles-outline",
+        "name": "My wishes",
+        "redirectTo": "/my-wishes"
+    },
+    {
+        "icon": "planet-outline",
+        "name": "Explore",
+        "redirectTo": "/explore"
+    }
+]

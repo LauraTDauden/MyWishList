@@ -44,4 +44,11 @@ export class MyWishesPage implements OnInit {
     this.router.navigateByUrl("/");
   }
 
+  //TODO: add logic for pagination and loading
+  loadData(event){
+    setTimeout(() => {
+      event.target.complete();
+    }, 600);
+  }
+
 }
