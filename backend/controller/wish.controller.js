@@ -63,8 +63,12 @@ exports.findOne = (req, res) => {
 
 exports.update = (req, res) => {
     const id = req.params.id;
-
-    Wish.update(req.body, {
+    const wish = {
+        item: req.body.item,
+        description: req.body.description,
+        filename: req.file ? req.file.filename : ""
+    };
+    Wish.update(wish, {
         where: {id: id}
     })
     .then(updated => {
