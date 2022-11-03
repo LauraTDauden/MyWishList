@@ -1,6 +1,7 @@
 # MyWishList ✨
 
-This is a simple full stack app developed using Ionic + Angular + Express + Sequelize + MySQL to manage a small Wishlist. It consists of a simple CRUD that allows us to manage the items in our wishlist.
+This is a simple full stack app developed using Ionic + Angular + Express + Sequelize + MySQL to manage a small Wishlist. 
+As well, the app allows you to use the camera from your phone to take pictures and save them in the database. The app also includes a simple authentication feature using tokens.
 The backend is developed with Node.js and Express, using MySQL for the database, while the frontend is developed with Ionic and Angular.
 
 
