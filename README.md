@@ -87,6 +87,9 @@ You may test the server with the following endpoints in postman: https://documen
 
 Enjoy the app!! 💟
 
+## Acknowledgements
+* Images by freepik
+* Images by srip
 
 ## Authors
 
