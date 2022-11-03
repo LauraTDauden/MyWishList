@@ -38,25 +38,50 @@ You may test the server with the following endpoints in postman: https://documen
 * For the backend, deploy the project using the command **node index.js**
 
 ## User guide
-* In the landing page, press "My wishes..." to access the WishList management screen!
+* First of all, welcome to the landing page!
 
-![imagen](https://user-images.githubusercontent.com/84546617/193635163-fed63891-ac3a-4426-aad0-1c33793fc84f.png)
+![Sin título-1](https://user-images.githubusercontent.com/84546617/199816702-cc21c9ce-af6b-46fc-9ba8-f882a757133d.jpg)
 
+* Press the menu icon to display the menu. You may also drag it from the left side of the screen:
 
-* In the My Wishes screen, you can see a list of all your wishes, as well as a button to create a new wish and one to return to the homepage. In each row, there's also a button to edit and to delete each wish.
+![imagen](https://user-images.githubusercontent.com/84546617/199817714-c3c365f3-853a-4866-8992-a889ac9f0d3b.png)
 
-![imagen](https://user-images.githubusercontent.com/84546617/193635236-a3f53682-39f2-4b1d-89a1-256bc926c8bf.png)
+*If you try to enter to the Profile, Make a wish or My wishes pages without logging in, the Log in page will appear:
 
-* If you press on the **Make a wish** button, you access the screen to create a new wish!
+![imagen](https://user-images.githubusercontent.com/84546617/199817447-7f320aa3-2b72-4205-b622-cce85b39b494.png)
 
-![imagen](https://user-images.githubusercontent.com/84546617/193635301-bb086deb-3290-4855-b3eb-e811a17cc6a7.png)
+*If you don't have an account, click on Register and fill in the Register form:
 
-* If you press the edit button on the My Wishes screen, a similar screen opens with the data of the selected wish. There you may update the information.
+![imagen](https://user-images.githubusercontent.com/84546617/199818712-88596085-d3cc-4b35-9779-c07ce8c31378.png)
 
-![imagen](https://user-images.githubusercontent.com/84546617/193635356-af01b8f7-0330-4dc6-ac42-d2f3390ce00e.png)
+*Once logged in you may go to the Profile, My Wishes and Make a Wish pages.
 
+*The My Wishes page consists of a list of all your wishes!
 
-* If you press the rubbish can icon, you may delete a wish from the list.
+![imagen](https://user-images.githubusercontent.com/84546617/199819114-30c9b986-a489-484c-acf2-ac1c6b5b4d07.png)
+
+*Press the arrow button of any of the elements and the accordion will open, revealing the Wish:
+
+![imagen](https://user-images.githubusercontent.com/84546617/199819359-fa929447-4202-4cb7-8cf5-ae969d11a1fe.png)
+
+*By sliding the Wish from right to left, you'll reveal the Edit and delete buttons:
+
+![imagen](https://user-images.githubusercontent.com/84546617/199819590-2b30a8fb-0470-4d56-a673-30d5c6430fed.png)
+
+*If you press on the **+** button, you'll open the Make a wish screen, where you may create a new wish:
+
+![imagen](https://user-images.githubusercontent.com/84546617/199819797-4cad027f-36a8-4468-bde6-e4ce38d77422.png)
+
+*You must fill the name of the wish and the description and may upload a photo too!
+
+*If you press the **Take a photo** button, your phone camera will open and you may take a picture:
+
+![Captura de pantalla 2022-11-01 202315](https://user-images.githubusercontent.com/84546617/199820299-2d09949b-657c-476d-bd4d-da22af9917c0.jpg)
+![Captura de pantalla 2022-11-01 202503](https://user-images.githubusercontent.com/84546617/199820366-9ab33e74-79fe-4cce-ae90-c14f1e3b20c3.jpg)
+
+*If you press **Pick an image** you can chose a picture from your gallery. And if you finally decide you don't like the photo, you may discard it.
+
+*When you're finished, press **New wish** to create the wish!
 
 
 Enjoy the app!! 💟
