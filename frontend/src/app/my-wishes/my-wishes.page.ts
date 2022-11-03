@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from '../auth/auth.service';
 import { WishService } from '../services/wish.service';
 
 @Component({
@@ -11,14 +12,25 @@ export class MyWishesPage implements OnInit {
 
   wishes: any = []
 
-  constructor(private wishService: WishService, private router: Router) { }
+  constructor(private wishService: WishService, private router: Router, private authService: AuthService) { }
 
   ngOnInit() {
-    this.getAllWishes();
+      this.authService.isLoggedIn().then((res) => {
+        if(!res){
+          this.router.navigateByUrl('/login');
+        } else this.getAllWishes();
+      })
+    
   }
 
   ionViewWillEnter() {
-    this.getAllWishes();
+      this.authService.isLoggedIn().then((res) => {
+        if(!res){
+          this.router.navigateByUrl('/login');
+        } else this.getAllWishes();
+      })
+    
+    
   }
 
   getAllWishes(){
@@ -42,6 +54,13 @@ export class MyWishesPage implements OnInit {
   }
   gotoHome(){
     this.router.navigateByUrl("/");
+  }
+
+  //TODO: add logic for pagination and loading
+  loadData(event){
+    setTimeout(() => {
+      event.target.complete();
+    }, 600);
   }
 
 }

@@ -1,24 +1,46 @@
 h1 {
   text-align: center;
-  color: #4c5879; font-family: 'Trocchi', serif; font-size: 2.5em; font-weight: normal; line-height: 48px; margin: 0;
+  color: #4c5879;
+  font-family: 'Trocchi', serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  line-height: 48px;
+  margin: 0;
   margin: 1em;
   border: 2px solid rgb(166, 158, 172);
   padding: 1em;
   border-radius: 1em;
 }
-
-
-.title{
-  color:red;
+@media screen and (max-width: 1000px) {
+  h1{
+    display:none;
+  }
+  
 }
 
-.button{
+.title {
+  color: red;
+}
+
+.button {
   margin: auto;
-  margin-top:2em;
+  margin-top: 2em;
   max-width: 300px;
+  position:absolute;
+  bottom: 28%;
+  left: 22%;
 }
 
 
+@media screen and (max-width: 1000px) {
+  ion-content {
+    --background: none;
+    background-image: url('../../assets/img/home.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 
 
 
@@ -26,5 +48,3 @@ h1 {
 
   --background: linear-gradient(#ffffff, #e4b3e1,#9ba3e4 );
 }*/
-
-

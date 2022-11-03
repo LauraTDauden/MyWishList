@@ -16,11 +16,19 @@ export class WishService {
   getWishById(id){
     return this.httpClient.get(`${this.endpoint}/${id}`);
   }
-  createWish(wish){
-    return this.httpClient.post(this.endpoint, wish);
+  createWish(wish, blob){
+    let formData = new FormData();
+    formData.append("item", wish.item);
+    formData.append("description", wish.description);
+    formData.append("filename", blob);
+    return this.httpClient.post(this.endpoint, formData);
   }
-  updateWish(wish, id){
-    return this.httpClient.put(`${this.endpoint}/${id}`, wish);
+  updateWish(wish, id, blob){
+    let formData = new FormData();
+    formData.append("item", wish.item);
+    formData.append("description", wish.description);
+    formData.append("filename", blob);
+    return this.httpClient.put(`${this.endpoint}/${id}`, formData);
   }
   deleteWish(id){
     return this.httpClient.delete(`${this.endpoint}/${id}`);
