@@ -31,7 +31,7 @@ In order for the app to work we need to install Node and MySQL.
  4) Change the database configuration in the db.config.js file (inside the config package in the backend project), changing the username and password.
 
 ## Postman and tests
-You may test the server with the following endpoints in postman: https://documenter.getpostman.com/view/23626796/2s83mjDfg4
+You may test the server with the following endpoints in postman: https://documenter.getpostman.com/view/23626796/2s8YY9x7jZ
 
 ## Deployment
 
