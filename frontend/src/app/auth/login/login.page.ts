@@ -46,7 +46,7 @@ islogged: boolean = false;
         this.presentAlert("invalid credentials");
         return;
       }
-      this.router.navigateByUrl('/logged');
+      this.router.navigateByUrl('/my-wishes');
       form.reset();
     }, err => {
       this.presentAlert("Error");

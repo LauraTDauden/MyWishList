@@ -8,12 +8,12 @@ import { AuthService } from '../auth/auth.service';
   styleUrls: ['./profile.page.scss'],
 })
 export class ProfilePage implements OnInit {
-
+  user: String = "";
   constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit() {
     this.authService.isLoggedIn().then((res) => {
-      if(!res){
+      if (!res) {
         this.router.navigateByUrl('/login');
       }
     })
@@ -21,10 +21,11 @@ export class ProfilePage implements OnInit {
 
   ionViewWillEnter() {
     this.authService.isLoggedIn().then((res) => {
-      if(!res){
+      if (!res) {
         this.router.navigateByUrl('/login');
       }
     })
+    this.user = AuthService.username;
   }
 
   logout() {

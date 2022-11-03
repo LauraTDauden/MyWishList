@@ -13,6 +13,7 @@ import { Storage } from '@ionic/storage-angular';
 export class AuthService {
 
   static logged : boolean = false;
+  static username: string = "";
 
   AUTH_SERVER_ADDRESS:  string  =  'http://localhost:8080';
 
@@ -63,6 +64,8 @@ export class AuthService {
             await this.init();
           }
           await this.storage.set("token", res.access_token);
+          console.log(user)
+          AuthService.username = user.username;
           //await this.storage.set("idUser", res.user.id);
         }
       })

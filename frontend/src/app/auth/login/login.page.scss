@@ -1,12 +1,16 @@
 ion-item{
-    --background: #3880ff;
+    --background: #b889df;
     --color: #fff;
+    --border-radius: 10px;
+    margin-top: 10px;
 }
 
 ion-button{
-    --background: #062f77;
+    --background: #3e2fca;
+    --border-radius: 10px;
 }
 
-a{
-    color: #fff;
+.ion-text-center{
+    margin-top: 45px;
 }
+
